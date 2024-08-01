@@ -1,0 +1,105 @@
+
+body{
+    background-color: rgb(26, 187, 187);
+}
+
+.wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-135deg, #1aae3a, #41afd0);
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+svg {
+  width: 600px;
+  height: 600px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: "Comfortaa", sans-serif;
+  border-radius: 4px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+button#btn-happy {
+  background-color: #eb584d;
+}
+button#btn-happy:hover {
+  background-color: #e62d1f;
+}
+button#btn-cool {
+  background-color: #007185;
+}
+button#btn-cool:hover {
+  background-color: #004652;
+}
+button#btn-sexy {
+  background-color: #e5004e;
+}
+button#btn-sexy:hover {
+  background-color: #b2003d;
+}
+button#btn-crazy {
+  background-color: #883277;
+}
+button#btn-crazy:hover {
+  background-color: #632456;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+button:focus {
+  outline: none;
+  border: 0;
+}
